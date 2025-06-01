@@ -1,0 +1,38 @@
+/* 
+This file contains the CSS styles specifically for the clock display, including layout, colors, and typography to achieve the modern black and pink design.
+*/
+
+body {
+    background-color: #000;
+    color: #ffc0cb;
+    font-family: 'IBM Plex Mono', monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.flip-clock {
+    display: flex;
+    gap: 1rem;
+}
+
+.digit {
+    background-color: #111;
+    color: #ffc0cb;
+    font-size: 6rem;
+    width: 120px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(255, 192, 203, 0.3);
+    transition: transform 0.4s ease-in-out;
+}
+
+.label {
+    font-size: 2rem;
+    text-align: center;
+    color: #ffc0cb;
+}
