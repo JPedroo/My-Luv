@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="styles/clock.css">
     <link rel="stylesheet" href="styles/main.css">
 	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href= "https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
 	<div class="header">
-		
+		<h2>João  &  Náthi</h2>
 	</div>
     <div class="carousel">
 	<div class="carousel-item">
@@ -86,6 +88,28 @@
 	    </div>
     </div>
 
+	<div class="countdown">
+    	<h4>Oficialmente juntos a <span id="monthCount">0</span> mês, <br> mas nossos olhares se cruzaram a exatos:</h4>
+    	<div class="countdown-container">
+			<div class="countdown-item">
+				<span id="days">0</span>
+				<span class="label">Dias</span>
+			</div>
+			<div class="countdown-item">
+				<span id="hours">0</span>
+				<span class="label">Horas</span>
+			</div>
+			<div class="countdown-item">
+				<span id="minutes">0</span>
+				<span class="label">Minutos</span>
+			</div>
+			<div class="countdown-item">
+				<span id="seconds">0</span>
+				<span class="label">Segundos</span>
+			</div>
+		</div>
+	</div>
+
 	<div class="gerador">
 		<h4>Que tal uma cantada? 😉 </h4>
 		<p id="pickup-line"></p>
@@ -118,17 +142,6 @@
 			    fill="var(--fill)"
 		    ></path>
 	    </symbol>
-
-	    <symbol id="ico-linkedin" viewBox="0 0 35 35">
-		    <circle opacity=".2" cx="17.5" cy="17.5" r="17" stroke="var(--fill)" fill="none"></circle>
-		    <path
-			    fill-rule="evenodd"
-			    clip-rule="evenodd"
-			    d="M15.3025 14.0835C15.3025 14.3845 15.1934 14.6403 14.9752 14.851C14.757 15.0617 14.4786 15.167 14.14 15.167C13.8014 15.167 13.5267 15.0617 13.316 14.851C13.1053 14.6403 13 14.3807 13 14.0722C13 13.7637 13.1053 13.5079 13.316 13.3047C13.5267 13.1016 13.8051 13 14.1512 13C14.4974 13 14.772 13.1016 14.9752 13.3047C15.1783 13.5079 15.2874 13.7675 15.3025 14.0835ZM13.0677 23V16.0248H15.2348V23H13.0677ZM16.4763 16.0248C16.5064 16.8676 16.5214 17.6125 16.5214 18.2596V23H18.7111V18.9819C18.7111 18.7111 18.7336 18.5305 18.7788 18.4402C18.9895 17.8984 19.3582 17.6275 19.8849 17.6275C20.6223 17.6275 20.991 18.1317 20.991 19.14V23H23.158V18.8691C23.158 17.8758 22.9285 17.1272 22.4695 16.623C22.0105 16.1189 21.4048 15.8668 20.6524 15.8668C19.6742 15.8668 18.9594 16.243 18.5079 16.9955H18.4628L18.3499 16.0248H16.4763Z"
-			    transform="translate(0 -1)"
-			    fill="var(--fill)"
-		    ></path>
-	    </symbol>
     </svg>
 
     <div class="cursor"></div>
@@ -136,5 +149,7 @@
 
     <script src="scripts/animation.js"></script>
 	<script src="scripts/pickupLines.js"></script>
+	<script src="scripts/countdown.js"></script>
+	<script src="scripts/scrollAnimations.js"></script>
 </body>
 </html>

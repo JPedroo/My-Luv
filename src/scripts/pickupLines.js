@@ -1,6 +1,6 @@
 const pickupLines = [
     "Varoa, meu amor por você é inabalável como os montes de Sião.",
-    "O viver é Cristo, o morer é lucro e o amar você é bônus!",
+    "O viver é Cristo, o morrer é lucro e o amar você é bônus!",
     "Seu pai é padeiro? Porque você é um sonho!",
     "Me chama de Moisés e faz uma aliança comigo? ",
     "Você não é a muralha de Jericó, mas quando te vi fiquei caidinho.",
