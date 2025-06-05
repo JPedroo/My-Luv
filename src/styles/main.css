@@ -340,9 +340,57 @@ body {
     transform: scale(0.95);
 }
 
-song audio {
+.song audio {
     display: none;
 }
+
+.avatar-footer {
+  background: #fce4ec;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: flex-end;
+  padding-top: 50px;
+}
+
+.avatar {
+  width: 80px;
+  height: auto;
+  animation: bounce 2s infinite ease-in-out;
+}
+
+.heart {
+  position: absolute;
+  animation: float 4s infinite ease-in-out;
+  font-size: 20px;
+  color: #e91e63;
+}
+
+@keyframes float {
+  0% { transform: translateY(0) scale(1); opacity: 1; }
+  100% { transform: translateY(-50px) scale(1.5); opacity: 0; }
+}
+
+
+.bounce.reverse {
+  animation-delay: 1s;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
 
 .social {
   position: absolute;
@@ -351,6 +399,8 @@ song audio {
   right: 25px;
   color: #fff;
   opacity: .4;
+  display: flex;
+  gap: 1rem;
 
   a {
     display: inline-block;
@@ -358,10 +408,24 @@ song audio {
   }
 
   svg {
-    --fill: #fff;
+    --fill: black;
     width: 35px;
     height: 35px;
   }
+}
+
+.social-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.social-name {
+    font-family: 'Caveat', cursive;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .cursor {
@@ -592,6 +656,10 @@ song audio {
     .social {
         bottom: 10px;
         right: 10px;
+    }
+
+    .social-name {
+        font-size: 1rem;
     }
 
     .social svg {
