@@ -672,21 +672,45 @@ body {
       .avatar {
         width: 60px;
     }
-    
+
+    .heart {
+        font-size: 16px;
+    }
 
     .social {
-        bottom: 8px;
-        right: 5px;
-    }
+    position: fixed;
+    bottom: 8px;
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    z-index: 10;
+}
 
-    .social-name {
-        font-size: 0.8rem;
-    }
+.social-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    .social svg {
-        width: 22px;
-        height: 22px;
-    }
+.social-name {
+    font-family: 'Caveat', cursive;
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.social svg {
+    width: 22px;
+    height: 22px;
+    fill: black;
+    transition: all 0.3s ease;
+}
+
+.social-item:hover svg {
+    fill: #ff92a4;
+    transform: scale(1.1);
+}
 
         .cursor,
         .cursor2 {
