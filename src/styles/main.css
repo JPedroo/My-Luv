@@ -669,18 +669,23 @@ body {
     display: none;
   }
 
+      .avatar {
+        width: 60px;
+    }
+    
+
     .social {
-        bottom: 10px;
-        right: 10px;
+        bottom: 8px;
+        right: 5px;
     }
 
     .social-name {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .social svg {
-        width: 25px;
-        height: 25px;
+        width: 22px;
+        height: 22px;
     }
 
         .cursor,
